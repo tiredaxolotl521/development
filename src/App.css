@@ -1,38 +1,201 @@
+@import url(//fonts.googleapis.com/css?family=Lato:400,700);
 .App {
+  font-family: Lato, sans-serif;
+}
+
+.root{
+  display: flex;
+  justify-content: center;
+  background-color: #f5ebd8;
+}
+.header{
+  height: 20vw;
+  background-color: #df4141;
+}
+.items{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.filter{
+  width: 15%
+}
+
+.cart{
+  width: 15%;
+  margin-right: 2%;
+}
+
+.cart_items{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart_text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item_count{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: .5vw;
+  margin-right: .5vw;
+  color: black;
+}
+.add_to_cart{
+  padding: 0 2vw 1vw 2vw;
+  margin-bottom: 2vw;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px 0px #a1a1a1;
+}
+.cart_button{
+  height: 20px;
+  width: 20px;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  color: black;
+  background-color: #f5ebd8; /* Green */
+  border: none;
+  /* padding: 1rem 1.3rem 1rem 1rem; */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  border-radius: 2px;
+}
+.cart_button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.item_box{
+  width: 400px;
+  margin: 2vw;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px 0px #a1a1a1;
+  transition: transform .2s;
+  border-radius: 5px;
+  max-height: 50%;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.center_text{
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center_text p{
+  background-color: #f3d032;
+  padding: .5vw;
+  border-radius: 5px;
+}
+.item_info{
+  margin: 2vw;
+}
+.item_info_box{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.item_info h4{
+  margin: 0 0 1vw 0;
+}
+
+.item_info_box p{
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  padding: 2px 0 2px 0;
+  width: 100px;
+  color: #6f6f6f;
+  box-shadow: 2px 2px 2px 0px #a1a1a1;
+  border-radius: 5px;
+}
+
+.item_box:hover {
+  transform: scale(1.05);
+}
+.filter_text{
+  margin-left: 2vw;
+}
+.center_text{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img{
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head_img{
+  padding: 5vw;
+  height: 10vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.small_img{
+  width: 50px;
+}
+.button_div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+}
+.clear_button{
+  display: inline-block;
+  padding: .5vw 1vw .5vw 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #df4141;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
+}
+.clear_button:hover {background-color: #ae4242}
+
+.clear_button:active {
+  background-color: #df4141;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  display: inline-block;
+  padding: .5vw 1vw .5vw 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
 }
