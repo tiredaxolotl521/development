@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://tiredaxolotl521.github.io/development/`
+If you used the stencil code, this is [`https://tiredaxolotl521.github.io/development/`](https://tiredaxolotl521.github.io/development/)
 
 ### Goal and Value of the Application
 The goal of the application is to allow users to sort through lego products and add lego products to their cart. Users can browse through an assorted variety of lego products and pick one based on their desired interests. The value of the application is to have an easy  on-stop-shop interface for users to filter through lego products. 
